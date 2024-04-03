@@ -78,3 +78,4 @@ C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\ref
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.pdb
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\ref\SocialMedia.Api.dll
+C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.sourcelink.json

@@ -15,3 +15,4 @@ C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Infrastructure\obj\Debug
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net7.0\SocialMedia.Infrastructure.pdb
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net7.0\SocialMedia.Infrastructure.genruntimeconfig.cache
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net7.0\ref\SocialMedia.Infrastructure.dll
+C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net7.0\SocialMedia.Infrastructure.sourcelink.json
