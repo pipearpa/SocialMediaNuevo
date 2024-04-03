@@ -91,6 +91,7 @@ C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7.0\SocialMedia.UnitTests.AssemblyInfoInputs.cache
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7.0\SocialMedia.UnitTests.AssemblyInfo.cs
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7.0\SocialMedia.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7.0\SocialMedia.UnitTests.sourcelink.json
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7.0\SocialMe.8BA0764C.Up2Date
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7.0\SocialMedia.UnitTests.dll
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.UnitTests\obj\Debug\net7.0\refint\SocialMedia.UnitTests.dll

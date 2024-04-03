@@ -5,8 +5,8 @@ C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\So
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\SocialMedia.Core.AssemblyInfoInputs.cache
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\SocialMedia.Core.AssemblyInfo.cs
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\SocialMedia.Core.csproj.CoreCompileInputs.cache
+C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\SocialMedia.Core.sourcelink.json
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\SocialMedia.Core.dll
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\refint\SocialMedia.Core.dll
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\SocialMedia.Core.pdb
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\ref\SocialMedia.Core.dll
-C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Core\obj\Debug\net7.0\SocialMedia.Core.sourcelink.json

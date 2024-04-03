@@ -64,6 +64,7 @@ C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\Soc
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.csproj.CoreCompileInputs.cache
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.sourcelink.json
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\staticwebassets\msbuild.SocialMedia.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -78,4 +79,3 @@ C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\ref
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.pdb
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\ref\SocialMedia.Api.dll
-C:\Users\faaristizabalp\Desktop\SocialMedia\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.sourcelink.json
