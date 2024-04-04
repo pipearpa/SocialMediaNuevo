@@ -18,11 +18,32 @@ namespace SocialMedia.Infrastructure.Repositories
         {
             _context = context;
         }
+
+        public async Task<Publicacion> GetPost(int id)
+        {
+            var posts = await _context.Publicacions.FirstOrDefaultAsync(x => x.IdPublicacion == id);
+
+            return posts;
+        }
+
         public async Task<IEnumerable<Publicacion>> GetPosts()
         {
             var posts = await _context.Publicacions.ToListAsync();
 
             return posts;
         }
+
+        // metodo para insertar publicaciones
+
+        public async Task InsertPost(Publicacion publicacion)
+        {
+           
+            _context.Publicacions.Add(publicacion);
+           await _context.SaveChangesAsync();
+
+           
+        }
+
+
     }
 }

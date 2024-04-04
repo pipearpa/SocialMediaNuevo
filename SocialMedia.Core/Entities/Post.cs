@@ -5,6 +5,10 @@ namespace SocialMedia.Core.Entities;
 
 public partial class Publicacion
 {
+    public Publicacion()
+    {
+        Comentarios = new HashSet<Comentario>();
+    }
     public int IdPublicacion { get; set; }
 
     public int IdUsuario { get; set; }
@@ -15,7 +19,9 @@ public partial class Publicacion
 
     public string? Imagen { get; set; }
 
+  
+
     public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
 
-    public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+    public virtual Usuario IdUsuarioNavigation { get; set; }
 }
