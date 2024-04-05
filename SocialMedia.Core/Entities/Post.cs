@@ -1,27 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace SocialMedia.Core.Entities;
 
-public partial class Publicacion
+public partial class Post
 {
-    public Publicacion()
+    public Post()
     {
-        Comentarios = new HashSet<Comentario>();
+        Comments = new HashSet<Comment>();
     }
-    public int IdPublicacion { get; set; }
+    public int PostId { get; set; }
+   
+    public int UserId { get; set; }
+   
 
-    public int IdUsuario { get; set; }
+    public DateTime Date { get; set; }
 
-    public DateTime Fecha { get; set; }
+    public string Description { get; set; }
 
-    public string Descripcion { get; set; } = null!;
+    public string? Image { get; set; }
+    public virtual User? User { get; set; }
 
-    public string? Imagen { get; set; }
 
-  
 
-    public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
+    public virtual ICollection<Comment> Comments { get; set; }
 
-    public virtual Usuario IdUsuarioNavigation { get; set; }
+   
 }

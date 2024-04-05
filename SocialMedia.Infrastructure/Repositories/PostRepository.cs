@@ -19,26 +19,26 @@ namespace SocialMedia.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<Publicacion> GetPost(int id)
+        public async Task<Post> GetPost(int id)
         {
-            var posts = await _context.Publicacions.FirstOrDefaultAsync(x => x.IdPublicacion == id);
+            var posts = await _context.Posts.FirstOrDefaultAsync(x => x.PostId == id);
 
             return posts;
         }
 
-        public async Task<IEnumerable<Publicacion>> GetPosts()
+        public async Task<IEnumerable<Post>> GetPosts()
         {
-            var posts = await _context.Publicacions.ToListAsync();
+            var posts = await _context.Posts.ToListAsync();
 
             return posts;
         }
 
         // metodo para insertar publicaciones
 
-        public async Task InsertPost(Publicacion publicacion)
+        public async Task InsertPost(Post post)
         {
            
-            _context.Publicacions.Add(publicacion);
+            _context.Posts.Add(post);
            await _context.SaveChangesAsync();
 
            

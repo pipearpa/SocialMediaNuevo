@@ -30,7 +30,7 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Publicacion post)
+        public async Task<IActionResult> Post(Post post)
         {
             await _postRepository.InsertPost(post);
             return Ok(post);

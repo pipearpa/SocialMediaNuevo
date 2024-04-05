@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "post",
-        "Type": "SocialMedia.Core.Entities.Publicacion",
+        "Type": "SocialMedia.Core.Entities.Post",
         "IsRequired": true
       }
     ],
