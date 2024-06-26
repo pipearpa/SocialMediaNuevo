@@ -20,9 +20,9 @@ namespace SocialMedia.Infrastructure.Repositories
             _entities = context.Set<T>();
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+        public IEnumerable<T> GetAll()
         {
-            return await _entities.ToArrayAsync();  
+            return _entities.AsEnumerable();  
         }
 
         public async Task<T> GetById(int id)
@@ -31,21 +31,20 @@ namespace SocialMedia.Infrastructure.Repositories
         }
         public async Task Add(T entity)
         {
-            _entities.Add(entity);
-           await _context.SaveChangesAsync();
+             _entities.Add(entity);
         }
 
-        public async Task Update(T entity)
+        public void  Update(T entity)
         {
             _entities.Update(entity);
-            await _context.SaveChangesAsync();
+        
         }
 
         public async Task Delete(int id)
         {
             T entity = await GetById(id);
             _entities.Remove(entity);
-            _context.SaveChanges();
+      
         }
 
 

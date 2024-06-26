@@ -13,5 +13,6 @@ namespace SocialMedia.Core.Interfaces
       IRepository<User> UserRepository { get; }
       IRepository<Comment> Comment { get; }
 
+        Task SaveChangesAsync();
     }
 }

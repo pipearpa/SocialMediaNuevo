@@ -4,8 +4,10 @@ namespace SocialMedia.Core.Interfaces
 {
     public interface IPostService
     {
+
+        IEnumerable<Post> GetPosts();
         Task<Post> GetPost(int id);
-        Task<IEnumerable<Post>> GetPosts();
+      
 
         Task InsertPost(Post post);
 
