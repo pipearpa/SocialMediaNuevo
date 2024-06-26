@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FLxQOkVls1qjjJyY8TcAKC84D4mGJt/zrglPZXd10KYvitwbRVbIfuWAR29XynbIeiILri9FXnxsSiP+vvdsag==",
+  "dgSpecHash": "AaiUh2e6wxE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\faaristizabalp\\Desktop\\SocialMedia\\SocialMedia.UnitTests\\SocialMedia.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\faaristizabalp\\Documents\\SocialMediaNuevo\\SocialMedia.UnitTests\\SocialMedia.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\faaristizabalp\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\faaristizabalp\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
@@ -92,7 +92,10 @@
     "C:\\Users\\faaristizabalp\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\faaristizabalp\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\faaristizabalp\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\faaristizabalp\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "C:\\Users\\faaristizabalp\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "C:\\Users\\faaristizabalp\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\faaristizabalp\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\faaristizabalp\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512"
   ],
   "logs": []
 }

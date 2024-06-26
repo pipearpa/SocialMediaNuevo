@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2Loy8bD5IQVC9RjZIc6zYdD7emN2NcHghFKztxfVB90JC8NaF0uemgwnIhQn/uHciHSiTmirrRZRktMq0rtu3g==",
+  "dgSpecHash": "IF0a/Qx1oRQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\faaristizabalp\\Desktop\\SocialMedia\\SocialMedia.Core\\SocialMedia.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\faaristizabalp\\Documents\\SocialMediaNuevo\\SocialMedia.Core\\SocialMedia.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\faaristizabalp\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\faaristizabalp\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\faaristizabalp\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512"
+  ],
   "logs": []
 }

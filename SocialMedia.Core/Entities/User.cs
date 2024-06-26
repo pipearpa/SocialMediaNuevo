@@ -1,6 +1,6 @@
 ﻿namespace SocialMedia.Core.Entities;
 
-public partial class User
+public partial class User : BaseEntity
 {
     public User()
     {
@@ -8,7 +8,7 @@ public partial class User
         Posts = new HashSet<Post>();
 
     }
-    public int UserId { get; set; }
+    
 
     public string FirtName { get; set; }
 
