@@ -9,7 +9,7 @@ namespace SocialMedia.Core.Interfaces
 {
     public interface IunitOfWork : IDisposable
     {
-      IRepository<Post> PostRepository { get; }
+      IPostRepository PostRepository { get; }
       IRepository<User> UserRepository { get; }
       IRepository<Comment> Comment { get; }
 

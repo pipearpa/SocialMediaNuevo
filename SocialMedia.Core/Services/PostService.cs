@@ -36,12 +36,22 @@ namespace SocialMedia.Core.Services
             {
                 throw new Exception("Usuario no existe");
             }
+            var userPost = await _unitOfWork.PostRepository.GetPostByUser(post.UserId);
+            if (userPost.Count() < 10) 
+            { 
+               var lastPost = userPost.OrderByDescending(x => x.Date).FirstOrDefault();
+                if((DateTime.Now - lastPost.Date).TotalDays < 7)
+                {
+                    throw new Exception("bien bien papa");
+                }
+            }
 
             if(post.Description.Contains("sexo"))
             {
                 throw new Exception("contenido no permitido");
             }
-           await _unitOfWork.PostRepository.Add(post);
+            await _unitOfWork.PostRepository.Add(post);
+            await _unitOfWork.SaveChangesAsync();
         }
             
         public async Task<bool> UpdatePost(Post post)
