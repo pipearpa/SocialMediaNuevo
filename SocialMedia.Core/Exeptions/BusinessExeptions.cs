@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace SocialMedia.Core.Exeptions
 {
-    internal class BusinessExeptions
+     public class BusinessExeptions : Exception
     {
+        public BusinessExeptions()
+        {
+            
+        }
+
+        public BusinessExeptions(string message) : base(message) 
+        {
+            
+        }
     }
 }

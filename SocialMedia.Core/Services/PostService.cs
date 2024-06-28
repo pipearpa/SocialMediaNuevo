@@ -1,6 +1,9 @@
 ﻿using SocialMedia.Core.Entities;
+using SocialMedia.Core.Exeptions;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Core.Queryfilters;
 using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,9 +27,28 @@ namespace SocialMedia.Core.Services
             return await _unitOfWork.PostRepository.GetById(id);
         }
 
-        public  IEnumerable<Post> GetPosts()
+        public  IEnumerable<Post> GetPosts(PostQueryFilters filters)
         {
-            return  _unitOfWork.PostRepository.GetAll();
+            var posts = _unitOfWork.PostRepository.GetAll();
+
+            if(filters.UserId != null)
+            {
+                posts =  posts.Where(x => x.UserId == filters.UserId);
+            }
+
+            if (filters.Date != null)
+            {
+                posts = posts.Where(x => x.Date.ToShortDateString() == filters.Date?.ToShortDateString());
+            }
+
+            if (filters.Description != null)    
+            {
+                posts = posts.Where(x => x.Description.ToLower().Contains(filters.Description.ToLower()));
+            }
+
+
+
+            return posts;
         }
 
         public async Task InsertPost(Post post)
@@ -34,7 +56,7 @@ namespace SocialMedia.Core.Services
            var user = await _unitOfWork.UserRepository.GetById(post.UserId);
             if (user == null)
             {
-                throw new Exception("Usuario no existe");
+                throw new BusinessExeptions("Usuario no existe");
             }
             var userPost = await _unitOfWork.PostRepository.GetPostByUser(post.UserId);
             if (userPost.Count() < 10) 
@@ -42,13 +64,13 @@ namespace SocialMedia.Core.Services
                var lastPost = userPost.OrderByDescending(x => x.Date).FirstOrDefault();
                 if((DateTime.Now - lastPost.Date).TotalDays < 7)
                 {
-                    throw new Exception("bien bien papa");
+                    throw new BusinessExeptions("bien bien papa");
                 }
             }
 
             if(post.Description.Contains("sexo"))
             {
-                throw new Exception("contenido no permitido");
+                throw new BusinessExeptions("contenido no permitido");
             }
             await _unitOfWork.PostRepository.Add(post);
             await _unitOfWork.SaveChangesAsync();
