@@ -7,11 +7,18 @@ using SocialMedia.Infrastructure.Filters;
 using SocialMedia.Infrastructure.Repositories;
 using FluentValidation.AspNetCore;
 using SocialMedia.Core.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Definir la variable Configuration
+var Configuration = builder.Configuration;
+
+
 
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -40,6 +47,28 @@ builder.Services.AddTransient<IunitOfWork, UnitOfWork>();
 //builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
 
+builder.Services.AddAuthentication(Options =>
+{
+    Options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    Options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(Options =>
+{
+    Options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = Configuration["Authentication:Issuer"],
+        ValidAudience = Configuration["Authentication:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Authentication:SecretKey"])) // Asegúrate de tener la clave secreta en tu archivo de configuración
+
+
+
+
+    };
+});
+
 
 
 builder.Services.AddMvc(options =>
@@ -48,7 +77,8 @@ builder.Services.AddMvc(options =>
 }).AddFluentValidation(options =>
 {
     options.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
-}); 
+});
+
 
 
 var app = builder.Build();

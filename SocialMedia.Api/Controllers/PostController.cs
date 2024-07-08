@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using SocialMedia.Infrastructure.Repositories;
 
 namespace SocialMedia.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController] // validacion de request
     public class PostController : ControllerBase
