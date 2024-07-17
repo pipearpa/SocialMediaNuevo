@@ -531,3 +531,5 @@ C:\Users\User\Documents\SocialMediaFinal\SocialMedia.Api\obj\Debug\net7.0\refint
 C:\Users\User\Documents\SocialMediaFinal\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.pdb
 C:\Users\User\Documents\SocialMediaFinal\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Users\User\Documents\SocialMediaFinal\SocialMedia.Api\obj\Debug\net7.0\ref\SocialMedia.Api.dll
+C:\Users\User\Documents\SocialMediaFinal\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.Properties.Resources.resources
+C:\Users\User\Documents\SocialMediaFinal\SocialMedia.Api\obj\Debug\net7.0\SocialMedia.Api.csproj.GenerateResource.cache

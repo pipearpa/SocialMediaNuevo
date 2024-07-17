@@ -23,7 +23,10 @@ public partial class SocialMediaContext : DbContext
 
     public  DbSet<User> Users { get; set; }
 
-    
+    public DbSet<Security> Securities { get; set; }
+
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new CommentConfiguration());
